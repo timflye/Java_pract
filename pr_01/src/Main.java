@@ -5,7 +5,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // Если переданы аргументы командной строки
+        // Если переданы аргументы
         if (args.length > 0) {
             System.out.println("Аргументы командной строки:");
 
@@ -19,7 +19,6 @@ public class Main {
             return;
         }
 
-        // Работа через Scanner
         while (true) {
             System.out.println("\nВыберите задачу:");
             System.out.println("1 - Периметр квадрата");
@@ -81,7 +80,7 @@ public class Main {
         }
     }
 
-    // Запуск задач через аргументы командной строки
+    // Запуск задач через аргументы 
     public static void runFromArgs(String[] args) {
 
         int task = Integer.parseInt(args[0]);
